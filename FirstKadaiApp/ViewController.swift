@@ -15,6 +15,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBOutlet weak var firstKadaiAppLabel: UILabel! {
+        didSet {
+            firstKadaiAppLabel.font = UIFont.systemFont(ofSize: 30.0)
+            firstKadaiAppLabel.numberOfLines = 0
+            firstKadaiAppLabel.sizeToFit()
+            firstKadaiAppLabel.textAlignment = NSTextAlignment.center
+            firstKadaiAppLabel.textColor = UIColor.red
+        }
+    }
 }
-
